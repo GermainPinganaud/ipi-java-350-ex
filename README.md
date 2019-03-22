@@ -39,11 +39,11 @@ Répondre de nouveau aux questions. Qu'est-ce qui a changé ?
 
 ### Tests unitaires classiques
 
-Créer la classe permettant de tester la méthode `getNombreAnneeAnciennete` et mettre en place les tests unitaires nécessaires pour tester le plus exhaustivement possible cette méthode. Bien penser à tous les cas possibles, notamment les cas aux limites. Ne pas hésiter à corriger le code de la méthode initiale si besoin.
+Créer la classe permettant de tester la méthode `getNombreAnneeAnciennete` de la classe `Employe` et mettre en place les tests unitaires nécessaires pour tester le plus exhaustivement possible cette méthode. Bien penser à tous les cas possibles, notamment les cas aux limites. Ne pas hésiter à corriger le code de la méthode initiale si besoin.
 
 ### Tests paramétrés
 
-Créer une méthode de test paramétré permettant de tester le plus exhaustivement possible la méthode `getPrimeAnnuelle` et corriger les éventuels problème de cette méthode.
+Créer une méthode de test paramétré permettant de tester le plus exhaustivement possible la méthode `getPrimeAnnuelle` de la classe `Employe` et corriger les éventuels problème de cette méthode.
 
 ### Tests mockés
 
@@ -57,11 +57,15 @@ Créer la classe de test et les méthodes permettant de tester la méthode `find
 
 ### Tests de service intégrés
 
-Tester de façon intégrée un cas nominal de la méthode `embaucheEmploye`.
+Tester de façon intégrée un cas nominal de la méthode `embaucheEmploye` de la classe `EmployeService`.
 
 ## Tests d'acceptation
 
-TODO
+- Installer Gauge depuis https://gauge.org/. La méthode d'installation recommandée est via npm. Il faut donc installer NodeJS. D'autres méthodes sont possibles cependant. 
+- Ajouter le chemin de l'exécutable Gauge dans la variable d'environnement PATH. Vous pouvez utiliser la commande `where gauge` dans une invite de commande Windows, ou `which gauge` dans un terminal Linux.
+- À l'aide d'un terminal, vous positionner à la racine de votre projet Java et initialiser (à l'aide de la documentation) un nouveau projet Gauge Java. Déplacer le dossier `specs` dans le dossier `src/test/resources`.
+- Un projet d'exemple de Gauge avec Spring se trouve à cette adresse : https://github.com/getgauge-examples/ioc-spring
+- Récupérer les classes `RegisterIOC` et `SpringGaugeTestApp` et les intégrer dans votre projet. Vous inspirer de la classe `PaymentService` pour ajouter les Step nécessaires pour écrirer un test d'acceptation validant la fonctionnalité d'embauche d'un employé.
 
 ## Maintenabilité
 
@@ -78,6 +82,7 @@ Commencer par faire une branche `evaluation` à partir de votre branche `master`
 ## Tests unitaires et TDD
 
 - Tester de manière unitaire le plus exhaustivement possible la méthode `augmenterSalaire` d'`Employe` en essayant de faire du TDD. Décommenter la méthode dans `Employe` et écrire d'abord les tests entièrement (en réflechissant particulièrement aux cas limites) avant d'écrire la méthode. Pensez-vous que vous auriez écrit la méthode directement comme cela si vous n'aviez pas écrit les tests en premier ?
+
 - Tester unitairement (en utilisant les tests paramétrés) la méthode `getNbRtt` d'`Employe` et corriger les éventuelles erreurs de cette méthode. Rendre cette méthode plus propre, documentée et lisible.
 
 ## Tests d'intégration
@@ -90,6 +95,7 @@ Commencer par faire une branche `evaluation` à partir de votre branche `master`
 
 - S'assurer que votre code passe et qu'il n'y a aucun *code smells* ou *anomalies* ou *bugs* bloquants, critiques ou majeurs. Si c'est le cas, corriger le code fourni.
 - S'assurer d'avoir 100% de couverture de code sur les méthodes testés dans l'évaluation
+
 
 ## Revue de code
 
