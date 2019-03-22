@@ -100,3 +100,4 @@ Commencer par faire une branche `evaluation` à partir de votre branche `master`
 ## Revue de code
 
 En fin de TP, créer une Pull Request de votre branche `evaluation` vers `master` et mettez-vous d'accord avec un collègue pour qu'il fasse la revue de code. Faites les éventuelles modifications puis affectez-moi la PR.
+
