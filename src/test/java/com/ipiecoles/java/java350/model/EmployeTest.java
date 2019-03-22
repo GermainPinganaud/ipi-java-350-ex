@@ -60,5 +60,16 @@ public class EmployeTest {
         Assertions.assertThat(nbAnnee).isEqualTo(0);
     }
 
+    @Test
+    public void testAugmenterSalaireFoisDeux(){
+        //Given
+        Employe e = new Employe();
+        Double salaireNonAugmente = e.getSalaire();
 
+        //When
+        e.augmenterSalaire(2.0);
+
+        //Then
+        Assertions.assertThat(e.getSalaire()).isEqualTo(salaireNonAugmente * 2);
+    }
 }
