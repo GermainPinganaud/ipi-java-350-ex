@@ -5,4 +5,4 @@ addons:
     organization: "germainpinganaud-github"
 
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.projectKey=pjvilloud_ipi-java-350-ex
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.projectKey=GermainPinganaud_ipi-java-350-ex
